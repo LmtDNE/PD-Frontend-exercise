@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>PagerDuty Front-End Challenge</title>
+
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- These scripts are just here for assistance if needed.  They are not required. -->
+  <!-- Add more if you need/want. -->
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/pdjs.js"></script>
+  <script src="scripts/handlebars.js"></script>
+
+  <!-- The main script that will handle with this page -->
+  <script src="scripts/main.js"></script>
+</head>
+<body>
+  <div id="app" class="app--ready">
+    <header class="app__header">
+      <h2 class="app__title">Users</h2>
+      <img class="app__logo" src="https://d15pqkbmbgi02z.cloudfront.net/assets/logos/logo-18e1cba552ff56d2ab5945cf43a2279b.svg" height="64">
+    </header>
+    <div class="app__content">
+      <div class="collection">
+        <!-- Preface: It helps us to know what you're thinking as you work,
+                      so when you can, be vocal with your thoughts/processes/ideas. -->
+
+        <!-- Exercise 1: Present a list of users (50 or so) from the API.
+                         Paging is not required -->
+        <!-- Exercise 2: After this exercise, see below at #page__user-show -->
+        <aside id="page__user-index" class="collection__list">
+          <ul class="user__list" id="user__list">
+          </ul>
+
+        </aside>
+
+        <!-- Exercise 2: Selecting a user should render a detail page for
+                         said user (within .user__placeholder). -->
+        <article id="page__user-show" class="collection__detail">
+          <button class="collection__back">Back</button>
+
+          <div class="user__placeholder" id="user__placeholder">
+            <!-- example of what should be rendered here -->
+            
+            <!-- end of example -->
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
